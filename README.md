@@ -23,6 +23,11 @@ Before running this project, make sure you have the following installed:
    ```
    git clone https://github.com/HelkerSuardi/netm-api
    ```
+   or
+
+   ```
+   git clone git@github.com:HelkerSuardi/netm-api.git
+   ```
 
 2. Change into the project directory:
 
