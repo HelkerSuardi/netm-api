@@ -21,13 +21,13 @@ Before running this project, make sure you have the following installed:
 1. Clone this repository to your local machine:
 
    ```
-   git clone https://github.com/HelkerSuardi/csv-reader.git
+   git clone https://github.com/HelkerSuardi/netm-api
    ```
 
 2. Change into the project directory:
 
    ```
-   cd csv-reader
+   cd netm-api
    ```
 
 3. Install all packages
