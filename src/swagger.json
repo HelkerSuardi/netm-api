@@ -1,0 +1,59 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "NETM API",
+    "description": "An API using NETM stack for create users in MongoDB",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/user": {
+      "post": {
+        "summary": "Register new user",
+        "description": "Use this route to register new users in db",
+        "tags": ["User"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          }
+        },
+        "responses": {
+          "409": {
+            "description": "Something goes wrong"
+          },
+          "400": {
+            "description": "Body is not in the correct format"
+          },
+          "201": {
+            "description": "User created successfully"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "John Doe"
+          },
+          "email": {
+            "type": "string",
+            "example": "johndoe@email.com"
+          },
+          "password": {
+            "type": "string",
+            "example": "mypassword123"
+          }
+        },
+        "required": ["name", "email", "password"]
+      }
+    }
+  }
+}
