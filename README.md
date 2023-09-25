@@ -21,7 +21,7 @@ Before running this project, make sure you have the following installed:
 1. Clone this repository to your local machine:
 
    ```
-   git clone https://github.com/HelkerSuardi/netm-api
+   git clone https://github.com/HelkerSuardi/netm-api.git
    ```
    or
 
